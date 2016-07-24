@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CityDriveApp</string>
+    <string name="intro_first_title">Welcome to CityDrive</string>
+    <string name="intro_second_title">Planning</string>
+    <string name="intro_third_title">An assistant</string>
+    <string name="intro_first_desc">The application for monitoring the city\'s transport network.</string>
+    <string name="intro_second_desc">Planning trips around the city</string>
+    <string name="intro_third_desc">An assistant when moving around the city using public transport.</string>
 </resources>
