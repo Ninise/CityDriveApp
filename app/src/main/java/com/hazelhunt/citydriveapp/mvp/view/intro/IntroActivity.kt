@@ -1,5 +1,7 @@
 package com.hazelhunt.citydriveapp.mvp.view.intro
 
+import android.app.Activity
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -8,6 +10,7 @@ import com.github.paolorotolo.appintro.AppIntro2
 import com.github.paolorotolo.appintro.AppIntro2Fragment
 import com.github.paolorotolo.appintro.AppIntroFragment
 import com.hazelhunt.citydriveapp.R
+import com.hazelhunt.citydriveapp.mvp.view.login.LoginActivity
 
 /**
  * Created by ninise on 7/24/16.
@@ -43,11 +46,16 @@ class IntroActivity : AppIntro2() {
 
     override fun onDonePressed(currentFragment: Fragment?) {
         super.onDonePressed(currentFragment)
-        Log.d("das", "onDonePressed")
+        navigate<LoginActivity>()
     }
 
     override fun onSkipPressed(currentFragment: Fragment?) {
         super.onSkipPressed(currentFragment)
-        Log.d("das", "onSkipPressed")
+        navigate<LoginActivity>()
+    }
+
+    inline fun <reified T : Activity> Activity.navigate() {
+        val intent = Intent(this, T::class.java)
+        startActivity(intent)
     }
 }

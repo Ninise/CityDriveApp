@@ -6,4 +6,11 @@
     <string name="intro_first_desc">The application for monitoring the city\'s transport network.</string>
     <string name="intro_second_desc">Planning trips around the city</string>
     <string name="intro_third_desc">An assistant when moving around the city using public transport.</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_pass_hint">Password</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="login_continue">Continue</string>
+    <string name="registration_email">Email</string>
+    <string name="login_connect">Connect</string>
+    <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
 </resources>
