@@ -10,11 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <android.support.v4.widget.Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight="1"
+            />
+
         <EditText
             android:id="@+id/registrationNameEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/login_fragment_edit_text_margin_top"
+            android:layout_weight="1"
             android:layout_marginLeft="@dimen/login_fragment_edit_text_margin_lr"
             android:layout_marginRight="@dimen/login_fragment_edit_text_margin_lr"
             android:gravity="center_vertical"
@@ -23,11 +29,17 @@
             android:drawablePadding="10dip"
             />
 
+      <android.support.v4.widget.Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight="1"
+            />
+
         <EditText
             android:id="@+id/registrationEmailEdiText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/login_fragment_edit_text_margin_top"
+            android:layout_weight="1"
             android:layout_marginLeft="@dimen/login_fragment_edit_text_margin_lr"
             android:layout_marginRight="@dimen/login_fragment_edit_text_margin_lr"
             android:gravity="center_vertical"
@@ -37,11 +49,17 @@
             android:drawablePadding="10dip"
             />
 
+      <android.support.v4.widget.Space
+            android:layout_width="20px"
+            android:layout_height="20px"
+            android:layout_weight="1"
+            />
+
         <EditText
             android:id="@+id/registrationPassEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/login_fragment_edit_text_margin_top"
+            android:layout_weight="1"
             android:layout_marginLeft="@dimen/login_fragment_edit_text_margin_lr"
             android:layout_marginRight="@dimen/login_fragment_edit_text_margin_lr"
             android:gravity="center_vertical"

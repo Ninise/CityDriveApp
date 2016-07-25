@@ -9,9 +9,10 @@ import com.hazelhunt.citydriveapp.mvp.view.login.RegistrationFragment
 /**
  * Created by ninise on 7/24/16.
  */
-class LoginViewPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAdapter(fragmentManager) {
+class LoginViewPagerAdapter(fragmentManager: FragmentManager, asList: MutableList<String>) : FragmentPagerAdapter(fragmentManager) {
 
     val countOfPage = 2
+    val list = asList
 
     override fun getItem(position: Int): Fragment {
         if (position == 0)
@@ -21,5 +22,9 @@ class LoginViewPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerAda
     }
 
     override fun getCount(): Int = countOfPage
+
+    override fun getPageTitle(position: Int): CharSequence {
+        return list[position]
+    }
 
 }
