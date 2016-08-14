@@ -17,6 +17,8 @@ class LoginActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_activity)
 
+        switchFragment<WhoAreYouFragment>(R.id.loginContainer, WhoAreYouFragment())
+
         val viewPager = findViewById(R.id.loginViewPager) as ViewPager?
         viewPager?.adapter = LoginViewPagerAdapter(supportFragmentManager, Arrays.asList(string(R.string.sign_in), string(R.string.sign_up)))
 

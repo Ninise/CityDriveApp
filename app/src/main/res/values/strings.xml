@@ -15,4 +15,7 @@
     <string name="registration_email">Email</string>
     <string name="login_connect">Connect</string>
     <string name="terms_and_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="who_are_you">Who are you?</string>
+    <string name="driver">I\'m a Driver</string>
+    <string name="passenger">I\'m a Passenger</string>
 </resources>

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.annotation.ColorRes
 import android.support.annotation.IntegerRes
 import android.support.annotation.StringRes
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 
 /**
@@ -26,5 +27,13 @@ open class BaseActivity : AppCompatActivity() {
     inline fun <reified T : Activity> Activity.navigate() {
         val intent = Intent(this, T::class.java)
         startActivity(intent)
+    }
+
+    fun <K> switchFragment(id: Int, fragment: Fragment) where K : Fragment {
+        supportFragmentManager.beginTransaction().replace(id, fragment).commit()
+    }
+
+    fun <K> removeFragment(fragment: Fragment) where K : Fragment {
+        supportFragmentManager.beginTransaction().remove(fragment).commit();
     }
 }

@@ -12,7 +12,6 @@ import com.hazelhunt.citydriveapp.R
 import com.hazelhunt.citydriveapp.extensions.inflate
 import com.hazelhunt.citydriveapp.mvp.presenter.login.ILoginView
 import com.hazelhunt.citydriveapp.mvp.presenter.login.LoginPresenter
-import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
 import com.hazelhunt.citydriveapp.mvp.view.main.MainActivity
 
 /**

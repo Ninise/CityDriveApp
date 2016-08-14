@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="whoAreYouTextViewStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="whoAreYouButtonStyle">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/justWhite</item>
+        <item name="android:fontFamily">sans-serif-bold</item>
+        <item name="android:background">@drawable/def_button_background</item>
+    </style>
+
 </resources>
