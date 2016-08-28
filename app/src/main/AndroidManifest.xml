@@ -20,6 +20,8 @@
 
         <activity android:name=".mvp.view.main.MainActivity"/>
 
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCxF7QvrPoF8-WaGpzapwPB8p1l7zKLe3E"/>
+
     </application>
 
 </manifest>

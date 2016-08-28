@@ -14,5 +14,6 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
 
+        switchFragment<MapFragment>(R.id.mapContainer, MapFragment())
     }
 }
