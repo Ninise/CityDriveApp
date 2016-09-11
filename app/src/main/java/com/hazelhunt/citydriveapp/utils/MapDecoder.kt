@@ -9,8 +9,7 @@ import java.util.ArrayList
  */
 class MapDecoder {
 
-    private fun decodePoly(encoded: String): List<LatLng> {
-
+    fun decodePoly(encoded: String): List<LatLng> {
         val poly = ArrayList<LatLng>()
         var index = 0
         val len = encoded.length
@@ -39,8 +38,7 @@ class MapDecoder {
             val dlng = if (result and 1 != 0) (result shr 1).inv() else result shr 1
             lng += dlng
 
-            val p = LatLng(lat.toDouble() / 1E5.0)),
-            lng.toDouble() / 1E5.0)))
+            val p : LatLng = LatLng(lat.toDouble() / 1E5, lng.toDouble() / 1E5)
             poly.add(p)
         }
         return poly

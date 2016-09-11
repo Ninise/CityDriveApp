@@ -1,5 +1,6 @@
 package com.hazelhunt.citydriveapp.mvp.view.login
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import com.hazelhunt.citydriveapp.R
 import com.hazelhunt.citydriveapp.extensions.inflate
 import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
+import com.hazelhunt.citydriveapp.mvp.view.main.MainActivity
 
 /**
  * Created by ninise on 8/14/16.
@@ -20,8 +22,8 @@ class WhoAreYouFragment : Fragment() {
         var mDriverButton = view?.findViewById(R.id.whoAreYouDriverButton)
         var mPassengerButton = view?.findViewById(R.id.whoAreYouPassengerButton)
 
-        mDriverButton!!.setOnClickListener { (activity as BaseActivity).removeFragment<WhoAreYouFragment>(this) }
-        mPassengerButton!!.setOnClickListener { (activity as BaseActivity).removeFragment<WhoAreYouFragment>(this) }
+        mDriverButton!!.setOnClickListener { (activity as BaseActivity).startActivity(Intent(context, MainActivity::class.java)) }
+        mPassengerButton!!.setOnClickListener { (activity as BaseActivity).startActivity(Intent(context, MainActivity::class.java)) }
 
 
         return view

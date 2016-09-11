@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">CityDriveApp</string>
+    <!--<string name="google_maps_key">AIzaSyCxF7QvrPoF8-WaGpzapwPB8p1l7zKLe3E</string>-->
+    <string name="google_maps_key">AIzaSyBajEOtjFqdv8QaIUXJNUsGcOXez6uWXcU</string>
     <string name="intro_first_title">Welcome to CityDrive</string>
     <string name="intro_second_title">Planning</string>
     <string name="intro_third_title">An assistant</string>
@@ -18,4 +20,7 @@
     <string name="who_are_you">Who are you?</string>
     <string name="driver">I\'m a Driver</string>
     <string name="passenger">I\'m a Passenger</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="main_map_btn">Map</string>
+    <string name="are_you_here">You are here</string>
 </resources>

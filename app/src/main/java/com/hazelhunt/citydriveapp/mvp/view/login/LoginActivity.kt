@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.support.design.widget.TabLayout
 import android.support.v4.view.ViewPager
 import com.hazelhunt.citydriveapp.R
-import com.hazelhunt.citydriveapp.adapters.LoginViewPagerAdapter
 import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
 import java.util.*
 
@@ -18,12 +17,6 @@ class LoginActivity : BaseActivity() {
         setContentView(R.layout.login_activity)
 
         switchFragment<WhoAreYouFragment>(R.id.loginContainer, WhoAreYouFragment())
-
-        val viewPager = findViewById(R.id.loginViewPager) as ViewPager?
-        viewPager?.adapter = LoginViewPagerAdapter(supportFragmentManager, Arrays.asList(string(R.string.sign_in), string(R.string.sign_up)))
-
-        val tabLayout = findViewById(R.id.loginTabLayout) as TabLayout?
-        tabLayout?.setupWithViewPager(viewPager)
     }
 
 

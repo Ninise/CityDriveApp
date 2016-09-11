@@ -3,9 +3,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/mainMapButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_map_btn"
+        />
+
     <FrameLayout
         android:id="@+id/mapContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainMapButton"
+        />
 
 </RelativeLayout>
