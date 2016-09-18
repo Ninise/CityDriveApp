@@ -1,49 +1,53 @@
 package com.hazelhunt.citydriveapp.mvp.view.map
 
 import android.os.Bundle
-import android.util.Log
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.PolylineOptions
 import com.hazelhunt.citydriveapp.R
+import com.hazelhunt.citydriveapp.extensions.inflate
 import com.hazelhunt.citydriveapp.mvp.presenter.map.IMapView
 import com.hazelhunt.citydriveapp.mvp.presenter.map.MapPresenter
-import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
 
 /**
- * Created by ninise on 9/4/16.
+ * Created by ninise on 8/28/16.
  */
-class MapActivity : BaseActivity(), OnMapReadyCallback, IMapView {
+class MapFragment : Fragment(), OnMapReadyCallback, IMapView {
 
     var presenter : MapPresenter = MapPresenter(this)
 
     var googleMap : GoogleMap? = null
     var mapReady : Boolean? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maps)
+    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        var view = container?.inflate(R.layout.map_fragment)
 
-        var mapFragment : SupportMapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        var mapFragment : SupportMapFragment = activity.supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+
+        return view!!
     }
+
 
     override fun onMapReady(map: GoogleMap?) {
         mapReady = true
         googleMap = map
 
-        presenter.startLocationListener(this)
+        presenter.startLocationListener(activity)
 
-        MapsInitializer.initialize(this)
+        MapsInitializer.initialize(activity)
     }
 
     override fun setMarker(markerOptions: MarkerOptions) {
         if (googleMap != null) {
             googleMap!!.addMarker(markerOptions)
         }
-
     }
 
     override fun drawTrack(polylineOptions: PolylineOptions) {
@@ -51,9 +55,9 @@ class MapActivity : BaseActivity(), OnMapReadyCallback, IMapView {
     }
 
     override fun setDeviceLocation(latLng: LatLng) {
-        presenter.createMarker(latLng, string(R.string.are_you_here))
+        presenter.createMarker(latLng, activity.getString(R.string.are_you_here))
 
-        var cameraPosition : CameraPosition = CameraPosition(latLng, 15f, 17f, 65f)
+        val cameraPosition : CameraPosition = CameraPosition(latLng, 15f, 17f, 65f)
         googleMap!!.moveCamera(CameraUpdateFactory.newCameraPosition(cameraPosition))
         presenter.getTrack(latLng, LatLng(47.8461348, 35.133563))
     }

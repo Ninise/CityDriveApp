@@ -36,9 +36,6 @@
     <activity android:name=".mvp.view.main.MainActivity"
               android:screenOrientation="portrait"/>
 
-    <activity android:name=".mvp.view.map.MapActivity"
-              android:screenOrientation="portrait"/>
-
 </application>
 
 </manifest>
