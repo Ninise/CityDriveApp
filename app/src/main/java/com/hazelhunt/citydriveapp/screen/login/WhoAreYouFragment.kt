@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.view.login
+package com.hazelhunt.citydriveapp.screen.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import com.hazelhunt.citydriveapp.R
 import com.hazelhunt.citydriveapp.extensions.inflate
 import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
-import com.hazelhunt.citydriveapp.mvp.view.main.MainActivity
+import com.hazelhunt.citydriveapp.screen.main.MainActivity
 
 /**
  * Created by ninise on 8/14/16.

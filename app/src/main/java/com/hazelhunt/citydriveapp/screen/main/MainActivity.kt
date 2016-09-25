@@ -1,10 +1,10 @@
-package com.hazelhunt.citydriveapp.mvp.view.main
+package com.hazelhunt.citydriveapp.screen.main
 
 import android.os.Bundle
 import android.widget.Button
 import com.hazelhunt.citydriveapp.R
 import com.hazelhunt.citydriveapp.mvp.view.BaseActivity
-import com.hazelhunt.citydriveapp.mvp.view.map.MapFragment
+import com.hazelhunt.citydriveapp.screen.map.MapFragment
 
 /**
  * Created by ninise on 8/14/16.

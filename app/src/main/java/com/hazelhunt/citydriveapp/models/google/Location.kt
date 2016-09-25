@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.models.google
+package com.hazelhunt.citydriveapp.models.google
 
 /**
  * Created by Nikita on 6/28/2016.

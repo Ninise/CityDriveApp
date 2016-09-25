@@ -1,6 +1,6 @@
 package com.hazelhunt.citydriveapp.network.maps
 
-import com.hazelhunt.citydriveapp.mvp.models.google.DirectionResults
+import com.hazelhunt.citydriveapp.models.google.DirectionResults
 
 import retrofit2.http.GET
 import retrofit2.http.Query

@@ -9,9 +9,9 @@ import android.util.Log
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.PolylineOptions
-import com.hazelhunt.citydriveapp.mvp.models.google.DirectionResults
-import com.hazelhunt.citydriveapp.mvp.models.google.Location
-import com.hazelhunt.citydriveapp.mvp.models.google.Steps
+import com.hazelhunt.citydriveapp.models.google.DirectionResults
+import com.hazelhunt.citydriveapp.models.google.Location
+import com.hazelhunt.citydriveapp.models.google.Steps
 import com.hazelhunt.citydriveapp.network.maps.GetDirection
 import com.hazelhunt.citydriveapp.utils.MapDecoder
 import fr.quentinklein.slt.LocationTracker
@@ -57,7 +57,7 @@ class MapPresenter(private val mView: IMapView) : IMapPresenter {
                     val steps = routeA.legs[0].steps
 
                     var step: Steps
-                    var location: com.hazelhunt.citydriveapp.mvp.models.google.Location
+                    var location: com.hazelhunt.citydriveapp.models.google.Location
                     var polyline: String
 
                     for (i in steps!!.indices) {

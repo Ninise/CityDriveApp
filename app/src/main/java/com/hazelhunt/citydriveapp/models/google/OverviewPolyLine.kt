@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.models.google
+package com.hazelhunt.citydriveapp.models.google
 
 import com.google.gson.annotations.SerializedName
 

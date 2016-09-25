@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.view.map
+package com.hazelhunt.citydriveapp.screen.map
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

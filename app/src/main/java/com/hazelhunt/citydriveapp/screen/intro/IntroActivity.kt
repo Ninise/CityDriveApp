@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.view.intro
+package com.hazelhunt.citydriveapp.screen.intro
 
 import android.app.Activity
 import android.content.Intent
@@ -9,7 +9,7 @@ import com.github.paolorotolo.appintro.AppIntro2
 import com.github.paolorotolo.appintro.AppIntro2Fragment
 import com.github.paolorotolo.appintro.AppIntroFragment
 import com.hazelhunt.citydriveapp.R
-import com.hazelhunt.citydriveapp.mvp.view.login.LoginActivity
+import com.hazelhunt.citydriveapp.screen.login.LoginActivity
 
 /**
  * Created by ninise on 7/24/16.

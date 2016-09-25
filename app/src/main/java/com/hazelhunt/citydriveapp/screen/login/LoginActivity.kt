@@ -1,4 +1,4 @@
-package com.hazelhunt.citydriveapp.mvp.view.login
+package com.hazelhunt.citydriveapp.screen.login
 
 import android.os.Bundle
 import android.support.design.widget.TabLayout

@@ -20,7 +20,7 @@
         android:glEsVersion="0x00020000"
         android:required="true"/>
 
-    <activity android:name=".mvp.view.intro.IntroActivity"
+    <activity android:name=".screen.intro.IntroActivity"
               android:noHistory="true"
               android:screenOrientation="portrait">
         <intent-filter>
@@ -29,11 +29,11 @@
         </intent-filter>
     </activity>
 
-    <activity android:name=".mvp.view.login.LoginActivity"
+    <activity android:name=".screen.login.LoginActivity"
               android:noHistory="true"
               android:screenOrientation="portrait"/>
 
-    <activity android:name=".mvp.view.main.MainActivity"
+    <activity android:name=".screen.main.MainActivity"
               android:screenOrientation="portrait"/>
 
 </application>

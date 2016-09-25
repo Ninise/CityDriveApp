@@ -1,7 +1,7 @@
 package com.hazelhunt.citydriveapp.network.maps
 
 import com.google.android.gms.maps.model.LatLng
-import com.hazelhunt.citydriveapp.mvp.models.google.DirectionResults
+import com.hazelhunt.citydriveapp.models.google.DirectionResults
 
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
